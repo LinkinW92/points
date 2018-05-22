@@ -1,0 +1,18 @@
+apply from: 'libraries.gradle'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+group = 'my.linkin'
+version = '1.0.SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.2.RELEASE'
+	// https://mvnrepository.com/artifact/com.google.guava/guava
+	compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
+	
+    
+}

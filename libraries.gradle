@@ -1,0 +1,930 @@
+ext {
+    versions = [
+    jacoco:                 '0.7.5.201505241946',
+    aspectj:                '1.7.2',
+    groovy:                 '2.3.7',
+    hibernate:              '3.5.6-Final',
+    httpcomponents:         '4.2.5',
+    http_core:              '4.3.3',
+    jetty:                  '8.1.10.v20130312',
+    jstl:                   '1.2',
+    morphia:                '1.3.2',
+    poi:                    '3.9',
+    slf4j:                  '1.7.7',
+    spring:                 '3.2.9.RELEASE',
+    spring_security:        '3.2.5.RELEASE',
+    travelzen:              '4.25.0-SNAPSHOT',
+    /* tz versions */
+    tfc_common:             '1.2.10.9.RELEASE',
+    tfc_client:             '1.2.10.2.RELEASE',
+    tfc_http_rpc:           '1.2.10.0.RELEASE',
+
+
+    tops_ufis:              '1.0.0.36.SNAPSHOT',
+    /* fit 自由行 jar 包版本请勿修改 */
+    tops_fit:               '1.2.9.0.RELEASE',
+
+    /* 旅游 */
+    tops_jn:                '1.2.28.4.RELEASE',
+    tops_ali_journey:           '1.2.28.0.RELEASE',
+    tops_visa:              '1.2.27.0.RELEASE',
+    tops_jvisa:                 '1.2.27.0.RELEASE',
+    tops_jn_framework:          '1.2.27.0.RELEASE',
+
+    tops_hotel:                     '1.2.13.3.RELEASE',
+
+    tz_framework:                   '1.3.3.5.RELEASE',
+    tz_framework_old:             '1.2.21.0.RELEASE',
+    tz_mongo_driver:                '1.3.3.3.RELEASE',
+    tz_framework_redis:		  '1.2.22.8.RELEASE',
+
+    tops_common:                '1.3.3.3.RELEASE',
+    tops_common_union800:       '1.3.3.3.RELEASE',
+    tops_common_dict:           '1.3.3.11.RELEASE',
+    tops_common_msg:                    '1.3.3.3.RELEASE',
+
+    /* 数据报表 jar 包版本请勿修改 */
+    tops_report:                '1.2.15.0.RELEASE',
+
+    tops_finance:           '1.2.21.39.SNAPSHOT',
+    tops_order:             '1.2.21.7.RELEASE',
+    tops_member:            '1.3.3.47.RELEASE',
+    tops_search:            '1.2.21.0.RELEASE',
+    tops_member_marketing:      '1.3.3.6.SNAPSHOT',
+
+    tops_order_util:                '1.2.21.1.RELEASE',
+    tops_order_third_party_converter:   '1.2.21.1.RELEASE',
+    tops_order_monitor_client:          '1.2.21.1.RELEASE',
+    tops_order_base:                    '1.2.21.1.RELEASE',
+
+
+
+    tops_fare:              '1.2.21.11.RELEASE',
+    tops_farerule:          '1.3.3.1.RELEASE',
+
+
+    tops_flight_price:              '1.8.29.RELEASE',
+    tops_flight_price_pack:         '1.8.24.RELEASE',
+
+    tops_flight:            '1.3.3.3.RELEASE',
+    tops_flight_thrift:         '1.2.23.3.RELEASE',
+
+
+    tops_flight_front:                  '1.3.20.9.RELEASE',
+    tops_pricing:           '1.3.3.2.RELEASE',
+    tops_pricing_common:                '1.3.3.2.SNAPSHOT',
+    tops_pricing_post_client:           '1.3.3.2.RELEASE', 
+    tops_pricing_config:                '1.3.3.2.RELEASE',
+    tops_front:             '1.3.3.39.RELEASE',
+    tops_front_zip:         '1.3.3.39.RELEASE',
+
+    tops_cluster:                       '1.2.13.0.SNAPSHOT',
+
+    tops_wunit:                         '1.2.15.0.RELEASE',
+
+    tops_fare_util:         '1.2.21.50.RELEASE',
+    tops_fare_datacenter:               '1.2.25.0.RELEASE',
+    tops_fare_ibeplus:          '1.2.25.0.RELEASE',
+    tops_fare_jiujiu:           '1.2.25.0.RELEASE',
+    tops_fare_galileo:          '1.2.25.0.RELEASE',
+    tops_paperfare:                     '1.2.25.1.RELEASE',
+    tops_fare_airline_mu:       '1.2.25.0.RELEASE',
+    tops_fare_shopping:         '1.2.25.0.RELEASE',  
+    tops_fare_tool:         '1.2.25.1.RELEASE',
+    tops_fare_eterm:                    '1.2.25.0.RELEASE',
+    tops_fare_proto:            '1.2.25.0.RELEASE',
+    
+    tops_eterm_parser:                  '1.3.9.6.RELEASE',
+    tz_eterm_interface:                 '1.7.2.RELEASE',
+
+    tops_stock:                         '1.2.19.0.SNAPSHOT',
+    tops_fare_selfflight:               '1.2.19.0.SNAPSHOT',
+
+    tops_cruise:            '1.0.0.7.RELEASE',
+    tops_additional:            '1.2.20.3.RELEASE',
+    tops_common_flight_fare_core:       '1.3.3.2.RELEASE',
+    tops_settlement:            '1.2.17.0.SNAPSHOT',
+
+    tops_finance_crawler:       '1.2.22.0.SNAPSHOT'
+
+    ]
+
+
+    libraries = [
+
+
+    tops_finance_crawler_client:         "com.travelzen:tops-finance-crawler-thrift-client:${versions.tops_finance_crawler}",
+
+
+    /* A */
+
+    // allinpay01(telpay)
+    allinpay01:             'com.allinpay:allinpay01:1.0',
+    allinpay02:             'com.allinpay:allinpay02:2.0',
+
+    activiti_engine:        'org.activiti:activiti-engine:5.14',
+    activiti_spring:        'org.activiti:activiti-spring:5.14',
+
+    // ant
+    ant:                    'org.apache.ant:ant:1.9.0',
+
+    // axis
+    axis:                   'axis:axis:1.4',
+    wsdl4j:                 'wsdl4j:wsdl4j:1.6.3',
+
+    // aspectj
+    aspectj:                "org.aspectj:aspectjweaver:${versions.aspectj}",
+    aspectj_rt:             "org.aspectj:aspectjrt:${versions.aspectj}",
+    aspectj_tools:          "org.aspectj:aspectjtools:${versions.aspectj}",
+
+    /* B */
+
+    // bcprov_jdk15
+    bcprov_jdk15:           'bouncycastle:bcprov-jdk15:140',
+    bonecp:                 'com.jolbox:bonecp:0.8.0.RELEASE',
+
+    /* C */
+
+    // cat client
+    cat_client:             'com.dianping.cat:cat-client:1.3.6',
+
+    // c3p0
+    c3p0:                   'c3p0:c3p0:0.9.1.2',
+
+    // chinapnr
+    chinapnr01:             'com.chinapnr:chinapnr01:1.0',
+    chinapnr02:             'com.chinapnr:chinapnr02:2.0',
+
+    // closure compiler
+    closure_compiler:       'com.google.javascript:clo?sure-compiler:r1592',
+
+    // cobertura
+    cobertura:              'net.sourceforge.cobertura:cobertura:1.9.4',
+
+    // codec
+    codec:                  'commons-codec:commons-codec:1.9',
+
+    // collections
+    collections_generic:    'net.sourceforge.collections:collections-generic:4.01',
+
+    // commons:
+    commons_beanutils:      'commons-beanutils:commons-beanutils:1.8.3',
+    commons_cli:            'commons-cli:commons-cli:1.2',
+    commons_collections:    'commons-collections:commons-collections:3.2.1',
+    commons_compress:       'org.apache.commons:commons-compress:1.5',
+    commons_configuration:  'commons-configuration:commons-configuration:1.9',
+    commons_dbcp:           'commons-dbcp:commons-dbcp:1.4',
+    commons_discovery:      'commons-discovery:commons-discovery:20040218.194635',
+    commons_fileupload:     'commons-fileupload:commons-fileupload:1.3',
+    commons_httpclient:     'commons-httpclient:commons-httpclient:3.1',
+    commons_id:             'org.littleshoot:littleshoot-commons-id:1.0.3',
+    commons_io:             'commons-io:commons-io:2.4',
+    commons_jexl:           'commons-jexl:commons-jexl:1.1',
+    commons_lang:           'commons-lang:commons-lang:2.6',
+    commons_lang3:          'org.apache.commons:commons-lang3:3.3.2',
+    commons_logging:        'commons-logging:commons-logging:1.1.1',
+    commons_net:            'commons-net:commons-net:3.2',
+    commons_pool:           'commons-pool:commons-pool:1.6',
+
+    conti_perf:             'org.databene:contiperf:2.3.4',
+
+    // cglib
+    cglib_asm:              'cglib:cglib-asm:1.0',
+    cglib_nodep:            'cglib:cglib-nodep:2.1_3',
+
+    // curator
+    curator:                'com.netflix.curator:curator-recipes:1.3.3',
+    curator_client:         'org.apache.curator:curator-client:2.7.0',
+    curator_framework:      'org.apache.curator:curator-framework:2.7.0',
+    curator_recipes:        'org.apache.curator:curator-recipes:2.7.0',
+    curator_x_discovery:    'org.apache.curator:curator-x-discovery:2.7.0',
+
+ 
+
+
+    // cxf
+    cxf:                    'org.apache.cxf:cxf-bundle:3.0.0-milestone2',
+
+    /* D */
+
+    // dnsjava
+    dnsjava:                'dnsjava:dnsjava:2.1.1',
+
+    // dom4j
+    dom4j:                  'dom4j:dom4j:1.6.1',
+
+    //dovePaySign
+    dovePaySign:            'dovePaySign:dovePaySign:1.0',
+
+    // dozer
+    dozer:                  'net.sf.dozer:dozer:5.4.0',
+
+    // dubbo
+    dubbo:          'com.alibaba:dubbo:2.8.1g',
+
+    dubbo2:                 'com.alibaba:dubbo:2.8.3.3',
+    /* E */
+
+    // easymock
+    easymock:               'org.easymock:easymock:3.0',
+
+    // ebuildapi
+    ebuildapi:              'com.travelsky:ebuildapi:1.0',
+
+    // ehcache
+    ehcache:                'net.sf.ehcache:ehcache-core:2.6.5',
+
+    // esapi
+    esapi:                  'org.owasp.esapi:esapi:2.1.0',
+
+    /* F */
+    framework:                      "com.travelzen:framework:${versions.tz_framework}",
+    framework_core:                 "com.travelzen:framework-core:${versions.tz_framework_old}",
+    framework_logger:               "com.travelzen:framework-logger:${versions.tz_framework}",
+    framework_logger_core:              "com.travelzen:framework-logger-core:${versions.tz_framework}",
+    framework_front:            "com.travelzen:framework-front:${versions.tz_framework}",
+    framework_config:               "com.travelzen:framework-config:${versions.tz_framework}",
+    framework_spring:                   "com.travelzen:framework-spring:${versions.tz_framework}",
+    framework_redis:                "com.travelzen:framework-redis:${versions.tz_framework_redis}",
+    framework_mongo_support:        "com.travelzen:framework-mongo-support:${versions.tz_mongo_driver}",
+    framework_dao_base:             "com.travelzen:framework-dao-base:${versions.tz_framework}",
+    framework_mybatis:              "com.travelzen:framework-mybatis:${versions.tz_framework}",
+    framework_search:           "com.travelzen:framework-search:${versions.tz_framework_old}",
+    framework_thrift:           "com.travelzen:framework-thrift:${versions.tz_framework}",
+    framework_thrift_client_pool:   "com.travelzen:framework-thrift-client-pool:${versions.tz_framework}",
+    framwork_zookeeper_support:     "com.travelzen:framework-zookeeper-support:${versions.tz_framework}",
+    framework_hadoop:           "com.travelzen:framework-hadoop:${versions.tz_framework}",
+    framework_quality:          "com.travelzen:framework-quality:${versions.tz_framework}",
+    framework_rabbitmq:         "com.travelzen:framework-rabbitmq:${versions.tz_framework}",
+
+    tops_additional_thrift_client:  "com.travelzen:tops-additional-thrift-client:${versions.tops_additional}",
+    tops_cluster_logmanager:            "com.travelzen:tops-cluster-logmanager:${versions.tops_cluster}",
+
+    tops_common_autoissue_api:      "com.travelzen:tops-common-autoissue-api:${versions.tops_common}",
+
+    tops_common_base:               "com.travelzen:tops-common-base:${versions.tops_common_msg}",
+    tops_common_data:               "com.travelzen:tops-common-data:${versions.tops_common}",
+    tops_common_dict:               "com.travelzen:tops-common-dict:${versions.tops_common_dict}",
+   
+    tops_front_operator:                    "com.travelzen:tops-front-operator:${versions.tops_front_zip}@zip",    
+    tops_front_purchaser:                   "com.travelzen:tops-front-purchaser:${versions.tops_front_zip}@zip",
+ 
+    tops_common_crawler:            "com.travelzen:tops-common-crawler:${versions.tops_common}",
+    tops_common_crawler_mongo  :    "com.travelzen:tops-common-crawler-mongo:${versions.tops_common}",
+    tops_common_ctrip_api:          "com.travelzen:tops-common-ctrip-api:${versions.tops_common}",
+    
+//  tops_common_dovepay_api:        "com.travelzen:tops-common-dovepay-api:${versions.tops_common}",
+
+ 
+    tops_common_mediaclient :       "com.travelzen:tops-common-mediaclient:${versions.tops_common_msg}",
+    tops_common_message_thrift_base : "com.travelzen:tops-common-message-thrift-base:${versions.tops_common_msg}",
+    tops_common_message_thrift_client : "com.travelzen:tops-common-message-thrift-client:${versions.tops_common_msg}",
+
+    tops_common_monitor:            "com.travelzen:tops-common-monitor:${versions.tops_common}",
+    tops_common_monitor_thrift  :   "com.travelzen:tops-common-monitor-thrift:${versions.tops_common}",
+    tops_common_monitor_rdb:        "com.travelzen:tops-common-monitor-rdb:${versions.tops_common}",
+    tops_common_monitor_client  :   "com.travelzen:tops-common-monitor-client:${versions.tops_common}",
+ 
+    tops_common_report_client:  "com.travelzen:tops-common-report-client:${versions.tops_report}",
+
+ 
+    tops_common_sms_dao:            "com.travelzen:tops-common-sms-dao:${versions.tops_common_msg}",
+    tops_common_sms_service :       "com.travelzen:tops-common-sms-service:${versions.tops_common_msg}",
+    tops_common_sms_client   :      "com.travelzen:tops-common-sms-client:${versions.tops_common_msg}",
+ 
+
+    tops_common_baituo_api:         "com.travelzen:tops-common-baituo-api:${versions.tops_common}",
+    tops_common_51book_api:         "com.travelzen:tops-common-51book-api:${versions.tops_common}",
+    tops_common_union800_api:       "com.travelzen:tops-common-union800-api:${versions.tops_common}",
+    tops_common_yeexing_api:        "com.travelzen:tops-common-yeexing-api:${versions.tops_common}",
+
+    tops_common_biz :               "com.travelzen:tops-common-biz:${versions.tops_common}",
+
+    
+    tops_common_fax_base :          "com.travelzen:tops-common-fax-base:${versions.tops_common_msg}",
+    tops_common_fax_client :        "com.travelzen:tops-common-fax-client:${versions.tops_common_msg}",
+ 
+    tops_common_fax_util :          "com.travelzen:tops-common-fax-util:${versions.tops_common_msg}",
+
+    tops_common_messaging :         "com.travelzen:tops-common-messaging:${versions.tops_common_msg}",
+    tops_common_messaging_mongo:    "com.travelzen:tops-common-messaging-mongo:${versions.tops_common_msg}",
+    
+    tops_fare_ibeplus_server:       "com.travelzen:ibeplus-server:${versions.tops_fare}",
+    tops_fare_ibeplus_server_xsd:       "com.travelzen:ibeplus-server-xsd:${versions.tops_fare}",
+  tops_ibeplus_connector:              "com.travelzen:tops-ibeplus-connector:${versions.tops_fare}",
+  tops_fare_proto:"com.travelzen:tops-fare-proto:${versions.tops_fare_proto}",
+        tops_fare_dandelion:                    "com.travelzen:dandelion:${versions.tops_fare}",
+
+    tops_fare_ibeplus_proto:            "com.travelzen:tops-fare-ibeplus-proto:${versions.tops_fare_ibeplus}",
+    tops_fare_ibeplus_shopping_searchone_client:    "com.travelzen:tops-fare-ibeplus-shopping-searchone-client:${versions.tops_fare_ibeplus}",
+    tops_fare_ibeplus_shopping_searchone_convertor: "com.travelzen:tops-fare-ibeplus-shopping-searchone-convertor:${versions.tops_fare_ibeplus}",   
+    tops_fare_ibeplus_shopping_av:          "com.travelzen:tops-fare-ibeplus-shopping-av:${versions.tops_fare_ibeplus_av}",
+    tops_fare_ibeplus_fd_client:            "com.travelzen:tops-fare-ibeplus-fd-client:${versions.tops_fare_ibeplus}",
+    tops_fare_ibeplus_shopping_client:              "com.travelzen:tops-fare-ibeplus-shopping-client:${versions.tops_fare_ibeplus}",        
+
+
+
+    tops_flight_fare_client:                        "com.travelzen:tops-flight-fare-client:${versions.tops_fare}",
+
+    tops_farerule_proto:            "com.travelzen:tops-farerule-proto:${versions.tops_farerule}",
+    tops_farerule_jpecker_client:   "com.travelzen:tops-farerule-jpecker-client:${versions.tops_farerule}",
+    tops_farerule_translator:       "com.travelzen:tops-farerule-translator:${versions.tops_farerule}",
+    tops_farerule_mongo_morphia:    "com.travelzen:tops-farerule-mongo-morphia:${versions.tops_farerule}",
+    
+    
+    tops_finance_common:            "com.travelzen:tops-finance-common:${versions.tops_finance}",
+    tops_finance_client:            "com.travelzen:tops-finance-client:${versions.tops_finance}",
+    tops_finance_account:           "com.travelzen:tops-finance-account:${versions.tops_finance}",
+  
+    tops_flight_common:             "com.travelzen:tops-flight-common:${versions.tops_flight}",
+    tops_flight_cache:              "com.travelzen:tops-flight-cache:${versions.tops_flight}",
+        tops_flight_cache_client:                       "com.travelzen:tops-flight-cache-client:${versions.tops_flight}",
+    tops_flight_mongo:              "com.travelzen:tops-flight-mongo:${versions.tops_flight}",
+    tops_flight_mongo_client:               "com.travelzen:tops-flight-mongo-client:${versions.tops_flight}",
+        tops_flight_mongo_enquiry:                      "com.travelzen:tops-flight-mongo-enquiry:${versions.tops_flight}",
+    tops_flight_thrift:             "com.travelzen:tops-flight-thrift:${versions.tops_flight_thrift}",
+        tops_flight_thrift_order:       "com.travelzen:tops-flight-thrift-order:${versions.tops_flight_thrift}",
+    tops_flight_thrift_new:         "com.travelzen:tops-flight-thrift-new:${versions.tops_flight_thrift}",
+        tops_flight_thrift_convertor:           "com.travelzen:tops-flight-thrift-convertor:${versions.tops_flight_thrift}",
+    tops_flight_front_common:                   "com.travelzen:tops-flight-front-common:${versions.tops_flight_front}",
+        tops_flight_price_client:                       "com.travelzen:tops-flight-price-client:${versions.tops_flight_price}",
+    tops_flight_price_pack_client:          "com.travelzen:tops-flight-price-pack-client:${versions.tops_flight_price_pack}", 
+ 
+    tops_order_util:                "com.travelzen:tops-order-util:${versions.tops_order_util}",
+        tops_order_third_party_converter:               "com.travelzen:tops-order-third-party-converter:${versions.tops_order_third_party_converter}",
+        tops_order_monitor_client:                      "com.travelzen:tops-order-monitor-client:${versions.tops_order_monitor_client}",
+        tops_order_base:                      "com.travelzen:tops-order-base:${versions.tops_order_base}",
+    tops_order_thrift:              "com.travelzen:tops-order-thrift:${versions.tops_order}",
+    tops_order_thrift_client:       "com.travelzen:tops-order-thrift-client:${versions.tops_order}",
+    tops_order_finance_callback:    "com.travelzen:tops-order-finance-callback:${versions.tops_order}",
+    
+
+ tops_pricing_relation:"com.travelzen:tops-pricing-relation:${versions.tops_pricing}",
+ tops_pricing_query:"com.travelzen:tops-pricing-query:${versions.tops_pricing}",
+ tops_pricing_openapi:"com.travelzen:tops-pricing-openapi:${versions.tops_pricing}",
+ tops_pricing_openapi_internat:"com.travelzen:tops-pricing-openapi-internat:${versions.tops_pricing}",
+ tops_pricing_export:"com.travelzen:tops-pricing-export:${versions.tops_pricing}",
+ tops_pricing_common:"com.travelzen:tops-pricing-common:${versions.tops_pricing_common}",
+ tops_pricing_file:"com.travelzen:tops-pricing-file:${versions.tops_pricing}",
+ tops_pricing_framework:"com.travelzen:tops-pricing-framework:${versions.tops_pricing_common}",
+ tops_pricing_import:"com.travelzen:tops-pricing-import:${versions.tops_pricing}",
+  tops_pricing_server:"com.travelzen:tops-pricing-server:${versions.tops_pricing}",
+  tops_pricing_thrift_interface:"com.travelzen:tops-pricing-thrift-interface:${versions.tops_pricing}",
+  tops_pricing_ticketchangerule:"com.travelzen:tops-pricing-ticketchangerule:${versions.tops_pricing}",
+  tops_pricing_report_form:"com.travelzen:tops-pricing-report-form:${versions.tops_pricing}",
+  tops_pricing_convert:"com.travelzen:tops-pricing-convert:${versions.tops_pricing}",
+  tops_pricing_front_common:"com.travelzen:tops-pricing-front-common:${versions.tops_pricing}",
+  tops_pricing_thrift_convertor:"com.travelzen:tops-pricing-thrift-convertor:${versions.tops_pricing}",
+  tops_pricing_computation:"com.travelzen:tops-pricing-computation:${versions.tops_pricing}",
+ tops_pricing_computation_model:"com.travelzen:tops-pricing-computation-model:${versions.tops_pricing_common}",
+  tops_pricing_import_thrift:"com.travelzen:tops-pricing-import-thrift:${versions.tops_pricing}",
+  tops_pricing_domestic_model:"com.travelzen:tops-pricing-domestic-model:${versions.tops_pricing_common}",
+  tops_pricing_common_utils:"com.travelzen:tops-pricing-common-utils:${versions.tops_pricing_common}",
+  tops_pricing_framework_thrift:"com.travelzen:tops-pricing-framework-thrift:${versions.tops_pricing_common}",
+ tops_pricing_config:"com.travelzen:tops-pricing-config:${versions.tops_pricing_config}",
+tops_pricing_post_client:"com.travelzen:tops-pricing-post-client:${versions.tops_pricing_post_client}",
+
+
+
+    tops_front_common:              "com.travelzen:tops-front-common:${versions.tops_front}",
+    tops_front_common_base:         "com.travelzen:tops-front-common-base:${versions.tops_front}",
+    tops_front_operator:            "com.travelzen:tops-front-operator:${versions.tops_front_zip}@zip",
+    tops_front_provider:                    "com.travelzen:tops-front-provider:${versions.tops_front_zip}@zip",
+    tops_front_operator_jar:        "com.travelzen:tops-front-operator:${versions.tops_front}", 
+    
+    tops_member_common:             "com.travelzen:tops-member-common:${versions.tops_member}",
+    tops_member_authorization:      "com.travelzen:tops-member-authorization:${versions.tops_member}",
+    tops_member_client:             "com.travelzen:tops-member-client:${versions.tops_member}",
+    tops_member_mongo:              "com.travelzen:tops-member-mongo:${versions.tops_member}",
+    tops_member_marketing_common:       "com.travelzen:tops-member-marketing-common:${versions.tops_member_marketing}",
+    tops_member_marketing_client:       "com.travelzen:tops-member-marketing-client:${versions.tops_member_marketing}",
+    tops_member_marketing_thrift:       "com.travelzen:tops-member-marketing-thrift:${versions.tops_member_marketing}",
+    tops_autocomplete_thrift:       "com.travelzen:tops-autocomplete-thrift:${versions.tops_search}",
+    
+        tops_hotel_thrift:                       "com.travelzen:tops-hotel-thrift:${versions.tops_hotel}",
+        tops_hotel_order_engine_thrift:          "com.travelzen:tops-hotel-order-engine-thrift:${versions.tops_hotel}",
+        tops_hotel_order_engine_thrift_client:   "com.travelzen:tops-hotel-order-engine-thrift-client:${versions.tops_hotel}",
+
+        tops_hotel_mongo:                        "com.travelzen:tops-hotel-mongo:${versions.tops_hotel}",
+
+    tops_jn_bd_service: "com.travelzen:tops-jn-bd-service:${versions.tops_jn}",
+
+    tops_jn_search:     "com.travelzen:tops-jn-search:${versions.tops_jn}",
+
+    tops_wunit_framework:            "com.travelzen:tops-wunit-framework:${versions.tops_wunit}",
+    tops_wunit_front:            "com.travelzen:tops-wunit-front:${versions.tops_wunit}",
+
+    tops_paperfare_mongoDB_client:       "com.travelzen:tops-paperfare-mongoDB-client:${versions.tops_paperfare}",
+    tops_paperfare_matcher_client:       "com.travelzen:tops-paperfare-matcher-client:${versions.tops_paperfare}",
+    tops_paperfare_proto:            "com.travelzen:tops-paperfare-proto:${versions.tops_paperfare}",
+        tops_paperfare_shopping_client:          "com.travelzen:tops-paperfare-shopping-client:${versions.tops_paperfare}"  ,
+    tops_paperfare_shopping_searchone_client:   "com.travelzen:tops-paperfare-shopping-searchone-client:${versions.tops_paperfare}",
+    tops_paperfare_shopping_searchone_convertor:    "com.travelzen:tops-paperfare-shopping-searchone-convertor:${versions.tops_paperfare}",
+    
+
+    //tops_paperfare_framework_mongoDB:  "com.travelzen:tops-paperfare-framework-mongoDB:${versions.tops_paperfare}",
+    //tops_paperfare_front_common:       "com.travelzen:tops-paperfare-front-common:${versions.tops_paperfare}",
+    tops_fare_util_front_common:         "com.travelzen:tops-fare-util-front-common:${versions.tops_fare_util}",
+    tops_fare_util_common:           "com.travelzen:tops-fare-util-common:${versions.tops_fare_util}",
+
+        tops_stock_proto:                        "com.travelzen:tops-stock-proto:${versions.tops_stock}",
+ 
+    tops_fare_selfflight_proto:      "com.travelzen:tops-fare-selfflight-proto:${versions.tops_fare_selfflight}",
+    tops_fare_selfflight_mongoDB_client:     "com.travelzen:tops-fare-selfflight-mongoDB-client:${versions.tops_fare_selfflight}",
+    tops_fare_selfflight_matcher_client:     "com.travelzen:tops-fare-selfflight-mongoDB-client:${versions.tops_fare_selfflight}",
+
+        tops_fare_datacenter_proto:                     "com.travelzen:tops-fare-datacenter-proto:${versions.tops_fare_datacenter}",
+    tops_fare_datacenter_storage_client:        "com.travelzen:tops-fare-datacenter-storage-client:${versions.tops_fare_datacenter}",
+    tops_fare_datacenter_strategy_client:       "com.travelzen:tops-fare-datacenter-strategy-client:${versions.tops_fare_datacenter}",
+    tops_fare_datacenter_app_publishedrate_client:  "com.travelzen:tops-fare-datacenter-app-publishedrate-client:${versions.tops_fare_datacenter}",
+
+    
+        tops_fare_shopping_proto:        "com.travelzen:tops-fare-shopping-proto:${versions.tops_fare_shopping}",
+        tops_fare_shopping_client:       "com.travelzen:tops-fare-shopping-client:${versions.tops_fare_shopping}",
+    
+    tops_fare_jiujiu_proto:             "com.travelzen:tops-fare-jiujiu-proto:${versions.tops_fare_jiujiu}",
+    tops_fare_jiujiu_shopping_client:       "com.travelzen:tops-fare-jiujiu-shopping-client:${versions.tops_fare_jiujiu}",
+
+    tops_fare_galileo_proto:            "com.travelzen:tops-fare-galileo-proto:${versions.tops_fare_galileo}",
+    tops_fare_galileo_shopping_client:      "com.travelzen:tops-fare-galileo-shopping-client:${versions.tops_fare_galileo}",
+
+        tops_fare_airline_mu_proto:                        "com.travelzen:tops-fare-airline-mu-proto:${versions.tops_fare_airline_mu}",
+        tops_fare_airline_mu_shopping_client:                "com.travelzen:tops-fare-airline-mu-shopping-client:${versions.tops_fare_airline_mu}",
+    
+    tops_fare_eterm_proto:              "com.travelzen:tops-fare-eterm-proto:${versions.tops_fare_eterm}",
+    tops_fare_eterm_av_convertor:           "com.travelzen:tops-fare-eterm-av-convertor:${versions.tops_fare_eterm}",
+    tops_fare_eterm_av_client:          "com.travelzen:tops-fare-eterm-av-client:${versions.tops_fare_eterm}",
+    tops_rosetta_eterm_parser:       "com.travelzen:tops-rosetta-eterm-parser:${versions.tops_eterm_parser}",
+        tz_eterm_interface_client:               "com.travelzen:tz-eterm-interface-client:${versions.tz_eterm_interface}",  
+
+    tops_fare_tool_shopping:         "com.travelzen:tops-fare-tool-shopping:${versions.tops_fare_tool}",
+    tops_fare_tool_shopping_convertor:   "com.travelzen:tops-fare-tool-shopping-convertor:${versions.tops_fare_tool}",
+    tops_fare_tool_shopping_route:       "com.travelzen:tops-fare-tool-shopping-route:${versions.tops_fare_tool}",
+
+    tops_jn_bd_dao:              "com.travelzen:tops-jn-bd-dao:${versions.tops_jn}",
+    tops_jn_dao:                 "com.travelzen:tops-jn-dao:${versions.tops_jn}",
+    tops_jn_order_service:           "com.travelzen:tops-jn-order-service:${versions.tops_jn}",
+    tops_jn_route_service:           "com.travelzen:tops-jn-route-service:${versions.tops_jn}",
+    tops_jn_thrift_client:           "com.travelzen:tops-jn-thrift-client:${versions.tops_jn}",
+    tops_visa_thrift_client:         "com.travelzen:tops-visa-thrift-client:${versions.tops_jn}",
+    tops_visa_dao:               "com.travelzen:tops-visa-dao:${versions.tops_jn}",
+        tops_visa_thrift_clients:                "com.travelzen:tops-visa-thrift-clients:${versions.tops_jvisa}",
+    tops_jn_autocomplete_thrift_client:      "com.travelzen:tops-jn-autocomplete-thrift-client:${versions.tops_jn}",
+    tops_ali_thrift_client:          "com.travelzen:tops-ali-thrift-client:${versions.tops_ali_journey}",
+
+    tops_cruise_thrift_plat_client:     "com.travelzen:cruise-thrift-plat-client:${versions.tops_cruise}",
+    tops_cruise_thrift_plat_gen:        "com.travelzen:cruise-thrift-plat-gen:${versions.tops_cruise}",
+
+    tops_ufis_client:            "com.travelzen:tops-ufis-client:${versions.tops_ufis}",
+    tops_fit_thrift_client :        "com.travelzen:tops-fit-thrift-client:${versions.tops_fit}",
+        tops_report_server_thrift:               "com.travelzen:tops-report-server-thrift:${versions.tops_report}",
+        tops_report_server_common:               "com.travelzen:tops-report-server-common:${versions.tops_report}",
+        tops_common_flight_fare_core:                  "com.travelzen:tops-common-flight-fare-core:${versions.tops_common_flight_fare_core}",
+
+    tops_ibe_interface_client:          "com.travelzen:tops-ibe-interface-client:1.4.6",
+
+    tops_settlement_thrift:         "com.travelzen:tops-settlement-thrift:${versions.tops_settlement}",
+    tops_settlement_thrift_client:      "com.travelzen:tops-settlement-thrift-client:${versions.tops_settlement}",
+
+    // fastjson
+    fastjson:               'com.alibaba:fastjson:1.1.29',
+
+    // allcom's faxapi
+    faxapi:                 'allcom:faxapi:1.0',
+
+    // feed4junit
+    feed4juit:              'org.databene:feed4junit:1.1.2',
+
+    // freemarker
+    freemarker:             'org.freemarker:freemarker:2.3.20',
+
+    /* G */
+
+    // groovy
+    groovy:                 "org.codehaus.groovy:groovy:${versions.groovy}",
+    groovy_all:             "org.codehaus.groovy:groovy-all:${versions.groovy}",
+    groovy_console:         "org.codehaus.groovy:groovy-console:${versions.groovy}",
+    groovy_jsr223:          "org.codehaus.groovy:groovy-jsr223:${versions.groovy}",
+    groovy_test:            "org.codehaus.groovy:groovy-test:${versions.groovy}",
+
+    // gson
+    gson:                   'com.google.code.gson:gson:2.3',
+
+    // guava
+    guava:                  'com.google.guava:guava:18.0',
+
+    // guice
+    guice:                  "com.google.inject:guice:3.0",
+
+    /* H */
+
+    // hadoop
+    hadoop_core:            'org.apache.hadoop:hadoop-core:0.20.2',
+
+    // hbase
+    hbase:                  'org.apache.hbase:hbase:0.90.5',
+
+    // hibernate
+    hibernate_annotation:   "org.hibernate:hibernate-annotations:${versions.hibernate}",
+    hibernate_core:         "org.hibernate:hibernate-core:${versions.hibernate}",
+    hibernate_validator:    'org.hibernate:hibernate-validator:4.1.0.Final',
+
+    // httpcomponents
+    http_core:              "org.apache.httpcomponents:httpcore:${versions.http_core}",
+    httpclient:             "org.apache.httpcomponents:httpclient:${versions.httpcomponents}",
+    httpmime:               "org.apache.httpcomponents:httpmime:${versions.httpcomponents}",
+
+    // Netflix Hystrix
+    hystrix:            "com.netflix.hystrix:hystrix-core:1.4.3",
+
+    /* I */
+
+    // ibatis
+    ibatis:                 'org.apache.ibatis:ibatis-sqlmap:2.3.4.726',
+
+    // ibator
+    ibator:                 'org.apache.ibatis:ibator:1.2.1.681',
+
+    // icu4j
+    icu4j:                  'com.ibm.icu:icu4j:51.1',
+
+    // inject
+    inject:                 'javax.inject:javax.inject:1',
+
+    /* J */
+
+    // jackson json processor
+    jackson_core_asl:       'org.codehaus.jackson:jackson-core-asl:1.9.12',
+    jackson_mapper_asl:     'org.codehaus.jackson:jackson-mapper-asl:1.9.12',
+
+    jackson_core:           'com.fasterxml.jackson.core:jackson-core:2.3.1',
+    jackson_databind:       'com.fasterxml.jackson.core:jackson-databind:2.3.3',
+    jackson_annotations:    'com.fasterxml.jackson.core:jackson-annotations:2.3.0',
+
+    // jacob
+    jacob:                  'net.sf.jacob-project:jacob:1.17',
+
+    // jacoco
+    jacoco_agent:           "org.jacoco:org.jacoco.agent:${versions.jacoco}",
+    jacoco_ant:             "org.jacoco:org.jacoco.ant:${versions.jacoco}",
+    jacoco_core:        "org.jacoco:org.jacoco.core:${versions.jacoco}",
+    jacoco_report:      "org.jacoco:org.jacoco.report:${versions.jacoco}",
+
+    // jactor
+    jactor:                 'org.agilewiki.jactor:jactor:4.6.2.0',
+    
+    janino:                 'org.codehaus.janino:janino:2.7.6',
+  
+    // javacsv
+    javacsv:                'net.sourceforge.javacsv:javacsv:2.0',
+
+    // javaee-api
+    javaee_api:             'javax:javaee-api:6.0',
+
+    // javassist
+    javassist:              'org.javassist:javassist:3.18.1-GA',
+
+    // javatuples
+    javatuples:             'org.javatuples:javatuples:1.2',
+
+    // jaxen
+    jaxen:                  'jaxen:jaxen:1.1.6',
+
+    // jax-rs
+    jaxrs:                 'org.jboss.resteasy:jaxrs-api:3.0.10.Final',
+
+    // jchardet
+    jchardet:               'net.sourceforge.jchardet:jchardet:1.0',
+
+    // jdom
+    jdom:                   'org.jdom:jdom:2.0.2',
+
+    // jedis
+    jedis:                  'redis.clients:jedis:2.1.0',
+
+    // jetlang
+    jetlang:                'org.jetlang:jetlang:0.2.12',
+
+    // jetty
+    jetty_servlet:          "org.eclipse.jetty:jetty-servlet:${versions.jetty}",
+    jetty_util:             "org.eclipse.jetty:jetty-util:${versions.jetty}",
+    jetty_websocket:        "org.eclipse.jetty:jetty-websocket:${versions.jetty}",
+    jetty_xml:              "org.eclipse.jetty:jetty-xml:${versions.jetty}",
+    jetty_webapp:           "org.eclipse.jetty:jetty-webapp:${versions.jetty}",
+    jetty_npn:              "org.eclipse.jetty.npn:npn-api:8.1.2.v20120308",
+
+    // jfreechart
+    jfreechart:             'jfree:jfreechart:1.0.13',
+
+    // jgraph
+    jgraph:                 'jgraph:jgraph:5.13.0.0',
+
+    // jgrapht
+    jgrapht:                'org.jgrapht:jgrapht-jdk1.5:0.7.3',
+
+    // jibx
+    jibx:                   'org.jibx:jibx-run:1.2.6',
+
+    // jivesoftware
+    jivesoftware_smack:     'jivesoftware:smack:3.1.0',
+
+    // jmagick
+    jmagick:                'jmagick:jmagick:6.6.9',
+
+    // jna
+    jna:                    'net.java.dev.jna:jna:3.5.2',
+
+    // joda
+    joda_time:              'joda-time:joda-time:2.4',
+    jackson_datatype_joda:  'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.0',
+
+    // jscience
+    jscience:               'org.jscience:jscience:4.3.1',
+
+    // json
+    json_lib:               'net.sf.json-lib:json-lib:2.3:jdk15',
+    json_smart:         'net.minidev:json-smart:2.1.0',
+    
+    // jsoup
+    jsoup:                  'org.jsoup:jsoup:1.8.1',
+
+    // jsr305
+    jsr305:                 'net.sourceforge.findbugs:jsr305:1.3.7',
+
+    // jstl
+    jstl_api:               "javax.servlet.jsp.jstl:jstl-api:${versions.jstl}",
+    jstl_impl:              "org.glassfish.web:jstl-impl:${versions.jstl}",
+
+    // junit
+    junit:                  'junit:junit:4.11',
+
+    // jta
+    jta:                    'javax.transaction:javax.transaction-api:1.2',
+
+    // jxl
+    jxl:                    'net.sourceforge.jexcelapi:jxl:2.6.12',
+
+    /* K */
+
+    kaptcha:                'com.github.axet:kaptcha:0.0.7',
+    kryo:                   'com.esotericsoftware.kryo:kryo:2.21',
+
+    /* L */
+
+    // leveldbjni
+    leveldbjni:             'org.fusesource.leveldbjni:leveldbjni-linux64:1.8',
+
+    // log4j
+    log4j:                  'log4j:log4j:1.2.17',
+
+    // logging
+    slf4j_api:              "org.slf4j:slf4j-api:${versions.slf4j}",
+    slf4j_nop:              "org.slf4j:slf4j-nop:${versions.slf4j}",
+    slf4j_log:              "org.slf4j:slf4j-log4j12:${versions.slf4j}",
+    jcl_over_slf4j:         "org.slf4j:jcl-over-slf4j:${versions.slf4j}",
+    log4j_over_slf4j:       "org.slf4j:log4j-over-slf4j:${versions.slf4j}",
+    logback:                'ch.qos.logback:logback-classic:1.1.2',
+    logback_ext:        'org.logback-extensions:logback-ext-spring:0.1.2',
+
+    // lucene
+    luecne_core:            'org.apache.lucene:lucene-core:3.6.2',
+    IKAnalyzer:             'org.wltea.analyzer.lucene:IKAnalyzer:2012_u5',
+    lucene_facet:           'org.apache.lucene:lucene-facet:4.6.0',
+    lucene_analyzers_common:'org.apache.lucene:lucene-analyzers-common:4.6.0',
+    lucene_regex:       'org.apache.lucene:lucene-regex:3.0.3',
+
+    /* M */
+
+    // mail
+    mail:                   'javax.mail:mail:1.4.7',
+    mmseg4j:                'com.chenlb.mmseg4j:mmseg4j-analysis:1.9.1',
+    minimal_json:           'com.eclipsesource.minimal-json:minimal-json:0.9.1',
+    // xebia-management-extras
+    management_extras:      'fr.xebia.management:xebia-management-extras:1.2.4',
+    // maria jdbc
+    maria_jdbc:             'org.jumpmind.symmetric.jdbc:mariadb-java-client:1.1.1',
+
+    // marshalling
+    marshalling:            'org.jboss.marshalling:jboss-marshalling:1.4.10.Final',
+
+    // mchange
+    mchange_commons_java:   'com.mchange:mchange-commons-java:0.2.6',
+
+    //mockito
+    mockito:                'org.mockito:mockito-all:1.8.4',
+
+    // mongodb
+    mongo_java_driver:      'org.mongodb:mongo-java-driver:3.4.2',
+    morphia:                "com.github.jmkgreen.morphia:morphia:${versions.morphia}",
+    morphia_validation:     "com.github.jmkgreen.morphia:morphia-validation:${versions.morphia}",
+    morphia_logging_slf4j:  "com.github.jmkgreen.morphia:morphia-logging-slf4j:${versions.morphia}",
+
+    // mx4j
+    mx4j_tools:             'mx4j:mx4j-tools:3.0.1',
+
+    // mybatis
+    mybatis:                'org.mybatis:mybatis:3.2.5',
+    mybatis_ehcache          : 'org.mybatis:mybatis-ehcache:1.0.0',
+    mybatis_spring:         'org.mybatis:mybatis-spring:1.2.2',
+    mybatis_generator:      'org.mybatis.generator:mybatis-generator-core:1.3.2',
+    mybatis_generator_plugins: 'net.javaforge.mybatis.generator:mybatis-generator-plugins:1.0.0',
+
+
+    // htmlcleaner
+    myhtmlcleaner:          'com.travelzen.tops.myhtmlcleaner:htmlcleaner:2.1',
+
+    //htmlparser 
+    html_parser:            'org.htmlparser:htmlparser:1.6',
+
+    // mysql connector
+    mysql_connector:        'mysql:mysql-connector-java:5.1.24',
+
+    /* N */
+
+    // netty
+    netty_all:              'io.netty:netty-all:4.0.15.Final',
+    netty5_all:             'io.netty:netty-all:5.0.0.Alpha2',
+    /* O */
+
+    // op4j
+    op4j:                   'org.op4j:op4j:1.2',
+    
+    ognl:                   'ognl:ognl:2.6.9',
+
+    // opencsv
+    opencsv:                'net.sf.opencsv:opencsv:2.3',
+
+    // oracle
+    oracle:                 'oracle:ojdbc:11.2.0.1.0',
+
+    /* P */
+
+    // perf4j
+    perf4j:                 'org.perf4j:perf4j:0.9.16',
+
+    // pinyin4j
+    pinyin4j:               'com.belerweb:pinyin4j:2.5.0',
+
+    // poi
+    poi:                    "org.apache.poi:poi:${versions.poi}",
+    poi_ooxml:              "org.apache.poi:poi-ooxml:${versions.poi}",
+    poi_scratchpad:         "org.apache.poi:poi-scratchpad:${versions.poi}",
+
+    // postgresql
+    postgresql:             'postgresql:postgresql:9.1-901.jdbc4',
+
+    // protobuf
+    protobuf:               'com.google.protobuf:protobuf-java:2.6.1',
+
+    // proxytoys
+    proxytoys:              'com.thoughtworks.proxytoys:proxytoys:1.0',
+
+    /* Q */
+
+    // quartz
+    quartz:                 'org.quartz-scheduler:quartz:2.1.7',
+    qtjambi:                'jambi:qtjambi:4.7.0',
+
+    /* R */
+
+    // rabbitmq
+    rabbitmq:               'com.rabbitmq:amqp-client:3.1.4',
+
+    // reflections
+    reflections:            'org.reflections:reflections:0.9.8',
+
+    // renderer
+    core_renderer:          'org.xhtmlrenderer:core-renderer:R8',
+
+    // rhino
+    rhino:                  'org.mozilla:rhino:1.7R4',
+
+    // rome atom+rss
+    rome:                   'net.java.dev.rome:rome:1.0.0',
+
+    /* S */
+
+    // servlet api
+    servlet_api:            'javax.servlet:javax.servlet-api:3.1.0',
+
+    // simple xml
+    simple_xml:             'org.simpleframework:simple-xml:2.7',
+
+    // snakeyaml
+    snakeyaml:              'org.yaml:snakeyaml:1.14',
+
+    // spring
+    spring_agent:           'org.springframework:spring-agent:2.5.6',
+    spring_aop:             "org.springframework:spring-aop:${versions.spring}",
+    spring_aspects:         "org.springframework:spring-aspects:${versions.spring}",
+    spring_context:         "org.springframework:spring-context:${versions.spring}",
+    spring_context_support: "org.springframework:spring-context-support:${versions.spring}",
+    spring_expression:      "org.springframework:spring-expression:${versions.spring}",
+    spring_instrument:      "org.springframework:spring-instrument:${versions.spring}",
+    spring_jdbc:            "org.springframework:spring-jdbc:${versions.spring}",
+    spring_orm:             "org.springframework:spring-orm:${versions.spring}",
+    spring_test:            "org.springframework:spring-test:${versions.spring}",
+    spring_tx:              "org.springframework:spring-tx:${versions.spring}",
+    spring_web:             "org.springframework:spring-web:${versions.spring}",
+    spring_webmvc:          "org.springframework:spring-webmvc:${versions.spring}",
+    spring_beans:       "org.springframework:spring-beans:${versions.spring}",
+    spring_core:        "org.springframework:spring-core:${versions.spring}",
+
+    // spring batch
+    spring_batch_core:      'org.springframework.batch:spring-batch-core:2.1.9.RELEASE',
+
+    // spring data
+    spring_data_redis:      'org.springframework.data:spring-data-redis:1.0.4.RELEASE',
+
+    // spring security
+    spring_security_acl:    "org.springframework.security:spring-security-acl:${versions.spring_security}",
+    spring_security_config: "org.springframework.security:spring-security-config:${versions.spring_security}",
+    spring_security_core:   "org.springframework.security:spring-security-core:${versions.spring_security}",
+    spring_security_web:    "org.springframework.security:spring-security-web:${versions.spring_security}",
+
+    // spring rabbitmq
+    //this is the highest version that is compatible with spring-3.29 , DOT NOT update to higher version
+    spring_rabbit:          'org.springframework.amqp:spring-rabbit:1.3.2.RELEASE',
+
+    // spring retry
+    spring_retry:           'org.springframework.retry:spring-retry:1.0.0.RELEASE',
+
+    // spring unitils
+    spring_unitils:         'org.unitils:unitils-spring:3.3',
+
+    // sqljdbc4
+    sqljdbc4:               'com.microsoft.sqlserver:sqljdbc4:1.0',
+
+    // sstable
+    sstable:                'com.google:sstable:1.0.1',
+
+    // scala
+    scala:                  'org.scala-lang:scala-library:2.10.2',
+
+    /* T */
+
+    // thrift
+    thrift:                 'org.apache.thrift:libthrift:0.9.0',
+
+    // test
+    testng:                 'org.testng:testng:6.8.1',
+
+    // tz
+    tz_core:                "com.travelzen.commons:tz-core:${versions.travelzen}",
+    tz_common_utilities:    "com.travelzen.commons:tz-common-utilities:${versions.travelzen}",
+    tz_db:                  "com.travelzen.commons:tz-db:${versions.travelzen}",
+    tz_hibernate:           "com.travelzen.commons:tz-hibernate:${versions.travelzen}",
+    tfc_client:             "com.travelzen:tfc-client:${versions.tfc_client}",
+    tfc_common:             "com.travelzen:tfc-common:${versions.tfc_common}",
+    tfc_http_rpc:           "com.travelzen:tfc-http-rpc:${versions.tfc_http_rpc}",
+    hotel_common:           'com.travelzen.product.hotel:product-hotel-project:2.14.0-SNAPSHOT',
+    hotel_common_1:         'com.travelzen.product.hotel:product-hotel-project:2.14.1-SNAPSHOT',
+    inventory_api:          'com.travelzen.inventory:inventory-project:0.12.0-SNAPSHOT',
+    
+    
+    
+    typesafe_config:        'com.typesafe:config:1.2.1',
+ 
+ 
+
+    /* U */
+
+    // unicompayment
+    unicompayment:          'unicompayment.unicompayment_decoder:1.0.0.1',
+
+    /* V */
+
+    // validation
+    validation:             'javax.validation:validation-api:1.0.0.GA',
+
+    /* W */
+
+    // webdriver
+    webdriver:              'net.sourceforge.htmlunit:webdriver:2.6',
+
+    /* X */
+
+    // xstream
+    xstream:                'com.thoughtworks.xstream:xstream:1.4.4',
+
+    /* Y */
+
+    /* Z */
+
+    // zookeeper
+    zookeeper:              'org.apache.zookeeper:zookeeper:3.3.5' ,
+    
+    zkclient:               'com.github.adyliu:zkclient:2.1.1',
+
+    browsermob_proxy:       'org.browsermob:browsermob-proxy:2.0-beta-2',
+   //selenium
+   selenium_java:           'org.seleniumhq.selenium:selenium-java:2.44.0',
+
+   selenium_firefox_driver: 'org.seleniumhq.selenium:selenium-firefox-driver:2.44.0',
+   selenium_chrome_driver: 'org.seleniumhq.selenium:selenium-chrome-driver:2.44.0'
+  // POI EXCEL
+   // poi:              'org.apache.poi:poi:3.10' ,
+   // poi_ooxml:       'org.apache.poi:poi-ooxml:3.10'
+
+    ]
+}
