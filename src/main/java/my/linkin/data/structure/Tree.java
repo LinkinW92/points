@@ -127,6 +127,7 @@ public abstract class Tree<T> {
 	
 	class Node {
 		T data;
+		int factor; //节点平衡因子， 为左子树深度-右子树深度
 		Node parent;
 		Node right;
 		Node left;

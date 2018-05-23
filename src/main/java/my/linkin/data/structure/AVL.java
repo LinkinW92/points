@@ -9,24 +9,20 @@ public class AVL<T> extends Tree<T>{
 
 	public AVL(T data) {
 		super(data);
-		// TODO Auto-generated constructor stub
 	}
 
+	//通过广度优先遍历或深度优先遍历来查找节点
 	@Override
 	protected Node isExist(T data) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	protected Tree<T>.Node insert(T t) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	protected void delete(T data) {
-		// TODO Auto-generated method stub
-		
 	}
 }
